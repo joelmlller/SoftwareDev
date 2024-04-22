@@ -1,0 +1,25 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-team29driver-dev-175907-authRole",
+      "UnauthRoleArn": "arn:aws:iam::274815321855:role/amplify-team29driver-dev-175907-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::274815321855:role/amplify-team29driver-dev-175907-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-team29driver-dev-175907-deployment",
+      "UnauthRoleName": "amplify-team29driver-dev-175907-unauthRole",
+      "StackName": "amplify-team29driver-dev-175907",
+      "StackId": "arn:aws:cloudformation:us-east-1:274815321855:stack/amplify-team29driver-dev-175907/11cfc700-d663-11ee-8e79-0a5e143e2387",
+      "AmplifyAppId": "dkkiuec0j4l8"
+    },
+    "categories": {
+      "auth": {
+        "team29driveref9f4119": {
+          "userPoolId": "us-east-1_HsvN77ciA",
+          "userPoolName": "Team29-User-Pool",
+          "webClientId": "79svo07u2k8h4oea15mh3krra7",
+          "nativeClientId": "79svo07u2k8h4oea15mh3krra7"
+        }
+      }
+    }
+  }
+}

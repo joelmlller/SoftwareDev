@@ -1,0 +1,29 @@
+{
+  "authSelections": "userPoolOnly",
+  "resourceName": "team29driveref9f4119",
+  "serviceType": "imported",
+  "region": "us-east-1",
+  "aliasAttributes": [
+    "email"
+  ],
+  "authProvidersUserPool": [],
+  "requiredAttributes": [
+    "phone_number",
+    "email",
+    "name"
+  ],
+  "passwordPolicyMinLength": 8,
+  "passwordPolicyCharacters": [
+    "Requires Lowercase",
+    "Requires Uppercase",
+    "Requires Numbers",
+    "Requires Symbols"
+  ],
+  "mfaConfiguration": "OPTIONAL",
+  "autoVerifiedAttributes": [
+    "email"
+  ],
+  "mfaTypes": [
+    "SMS Text Message"
+  ]
+}
