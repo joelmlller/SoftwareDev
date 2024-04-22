@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+*{
+  margin: 0;
+  padding: 0;
+}
+.wrapper{
+box-sizing: border-box;
+text-decoration: none;   
+font-family: 'Poppins', sans-serif;
+background: #4289fa;
+position: fixed;
+width: 100%;
+}
+
+.wrapper nav {
+  position: fixed; /* Change this to fixed */
+  top:0;
+  display: flex;
+  width: 100%;
+  background-color: #4289fa;
+}
+
+/* Remove the position: absolute; from .links */
+.links {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin-left: auto; /* Align links to the right */
+  margin-right: 20px; /* Add some margin to the right */
+}
+
+/* Adjust the top margin to push content below the navbar */
+main {
+  margin-top: 70px; /* Adjust this value based on your navbar height */
+}
+
+.links div{
+margin-left: 10px;
+margin-right: 10px;
+}
+#logo{
+margin-left: 20px;
+max-height: 70px;
+cursor: pointer;
+}
+#logo h2{
+display:inline-block;
+position: relative;
+bottom:27px;
+right:10px;
+color:white;
+}
+#searchbar{
+position:relative;
+display: flex;
+top:20px;
+}
+#searchbar input{
+height:30px;
+min-width: 300px;
+padding-left: 5px;
+}
+#searchbar button{
+width: 30px;
+height: 30px;
+cursor: pointer;
+}
+#circle {
+position:absolute;
+z-index: -1;
+top: 10px;
+height: 50px;
+width: 50px;
+background-color: rgb(255, 255, 255);
+border-radius: 50%;
+}
+.tooltiptext {
+visibility: hidden;
+background-color: black;
+color: #fff;
+text-align: center;
+border-radius: 6px;
+position: absolute;
+z-index: 1;
+display:block;
+}
+#profile{
+  padding-top: 10px;
+}
+#profile:hover #circle{
+transition: all 0.3s ease;
+background: #ff7300;
+cursor: pointer;
+}
+#profile:hover{
+    cursor: pointer;  
+}
+#profile:hover #dropdown{
+visibility: visible;
+display: block;
+}
+#dropdown{
+  position:absolute;
+  list-style-type: none;
+  display: none;
+  visibility: hidden;
+  right: 5px;
+}
+#dropdown ul li{
+  list-style-type: none;
+  background-color: #3975d6;
+  color:white;
+  padding: 1px;
+  border-radius: 5px;
+}
+#dropdown h4{
+  background-color: #4289fa;
+  padding: 5px;
+}
+#dropdown h4:hover{
+  background-color: #ff7300;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  }
+#cart img{
+  position: relative;
+  top:10px;
+  left: 5px;
+}
+#cart:hover{
+background-color: #ff7300;
+border-radius: 5px;
+transition: all 0.3s ease;
+cursor: pointer;
+}
+#cart:hover .tooltiptext{
+visibility: visible;
+}
+#cart h3{
+display: inline-block;
+position: relative;
+color: black;
+right:22px;
+bottom: 20px;
+}
+#pointDiv{
+margin-top: 10px;
+max-width: 100px;
+width:auto;
+height:50px;
+background-color: white;
+border-radius: 5px 5px;
+
+}
+#pointDiv p{
+text-align: center;
+color:white;
+background-color: #ff7300;
+border-radius: 5px 5px 0 0;
+padding-left: 5px;
+padding-right: 5px;
+
+}
+#points{
+text-align: center;
+padding-left: 5px;
+padding-right: 5px;
+}
+.navlinks{
+min-width: 78px;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+}
+.navlinks h4{
+color: white;
+}
+.navlinks:hover{
+background-color: #ff7300;
+border-radius: 5px;
+transition: all 0.3s ease;
+}
+
+.amplify-sign-out-button {
+  background-color: #ff7300;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.amplify-sign-out-button:hover {
+  background-color: #e06600;
+}
+
+
+@media screen and (max-width: 1250px) {
+  #searchbar {
+    display: none;
+  }
+
+  .links {
+    right: 10px; /* Adjust the position of the links */
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #logo h2 {
+    display: none; /* Hide the company name on smaller screens */
+  }
+
+  .navlinks h4 {
+    font-size: 14px; /* Reduce the font size of the nav links */
+  }
+
+  #pointDiv, #cart, #profile {
+    display: none; /* Hide some elements on smaller screens */
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .wrapper {
+    flex-direction: column; /* Stack the logo and links vertically */
+  }
+
+  #logo {
+    margin-bottom: 10px; /* Add some space below the logo */
+  }
+
+  .navlinks {
+    margin: 5px 0; /* Reduce the margin between nav links */
+  }
+}
+

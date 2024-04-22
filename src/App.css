@@ -1,0 +1,229 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.App {
+  text-align: center;
+}
+
+/* Button styles */
+button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Input styles */
+input {
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+header {
+  background-color: #282c34;
+  color: white;
+  padding: 20px 0;
+}
+
+.btn {
+  background-color: #61dafb;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+
+.feature {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+.footer {
+  background-color: #282c34;
+  color: white;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center; /* Center the text */
+}
+
+.container {
+  max-width: 800px;
+  margin: 90px auto; /* was originally 20px. but added 70px. The navbar is 70px long so added 70px to make the container below nav */
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Modal styles */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content p {
+  margin-bottom: 20px;
+}
+
+.modal-content button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #61dafb;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.modal-content button:last-child {
+  margin-right: 0;
+}
+
+.about-container {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.about-header {
+  text-align: center;
+  color: #007bff; /* Adjust color to fit your app's theme */
+  margin-bottom: 30px;
+}
+
+.about-content {
+  background-color: #f9f9f9; /* Light background to make content pop */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Soft shadow for depth */
+}
+
+.about-item {
+  margin-bottom: 15px;
+}
+
+.about-title {
+  font-weight: bold;
+  color: #333; /* Darker text for the title */
+  margin-right: 10px;
+}
+
+.about-detail {
+  color: #666; /* Lighter text for details */
+}
+
+
+.user-form input,
+.user-form select {
+  width: calc(100% - 22px); /* Adjusted width to accommodate the margins */
+  padding: 10px; /* Updated padding */
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.user-form button {
+  width: calc(100% - 22px); /* Adjusted width to accommodate the margins */
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: #fff;
+}
+
+.user-form button:hover {
+  background-color: #218838;
+}
+
+.success-message,
+.error-message {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+li > div {
+  margin-bottom: 5px;
+}
+
+li button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+li button:hover {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.mini-title {
+  font-size: 18px;
+  color: #555; 
+  margin-bottom: 15px; 
+  text-align: center; 
+  font-weight: 500; 
+}
